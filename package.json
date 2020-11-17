@@ -28,7 +28,6 @@
                 "command": "extension.openInDefaultBrowser",
                 "title": "Open In Default Browser"
             },
-
             {
                 "command": "extension.openInSpecifyBrowser",
                 "title": "Open In Other Browsers"
@@ -58,36 +57,36 @@
         "menus": {
             "explorer/context": [
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
                     "group": "open-in-browser"
                 },
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInSpecifyBrowser",
                     "group": "open-in-browser"
                 }
             ],
             "editor/context": [
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
                     "group": "open-in-browser"
                 },
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInSpecifyBrowser",
                     "group": "open-in-browser"
                 }
             ],
             "editor/title/context": [
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
                     "group": "open-in-browser"
                 },
                 {
-                    "when": "resourceLangId == html",
+                    "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInSpecifyBrowser",
                     "group": "open-in-browser"
                 }
