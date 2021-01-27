@@ -18,8 +18,7 @@
         "browser"
     ],
     "activationEvents": [
-        "onCommand:extension.openInDefaultBrowser",
-        "onCommand:extension.openInSpecifyBrowser"
+        "onCommand:extension.openInDefaultBrowser"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -27,10 +26,6 @@
             {
                 "command": "extension.openInDefaultBrowser",
                 "title": "Open In Default Browser"
-            },
-            {
-                "command": "extension.openInSpecifyBrowser",
-                "title": "Open In Other Browsers"
             }
         ],
         "configuration": {
@@ -46,10 +41,6 @@
         },
         "keybindings": [
             {
-                "command": "extension.openInSpecifyBrowser",
-                "key": "shift+alt+B"
-            },
-            {
                 "command": "extension.openInDefaultBrowser",
                 "key": "Alt+B"
             }
@@ -60,11 +51,6 @@
                     "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
                     "group": "open-in-browser"
-                },
-                {
-                    "when": "resourceLangId == html || resourceLangId == pdf",
-                    "command": "extension.openInSpecifyBrowser",
-                    "group": "open-in-browser"
                 }
             ],
             "editor/context": [
@@ -72,22 +58,12 @@
                     "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
                     "group": "open-in-browser"
-                },
-                {
-                    "when": "resourceLangId == html || resourceLangId == pdf",
-                    "command": "extension.openInSpecifyBrowser",
-                    "group": "open-in-browser"
                 }
             ],
             "editor/title/context": [
                 {
                     "when": "resourceLangId == html || resourceLangId == pdf",
                     "command": "extension.openInDefaultBrowser",
-                    "group": "open-in-browser"
-                },
-                {
-                    "when": "resourceLangId == html || resourceLangId == pdf",
-                    "command": "extension.openInSpecifyBrowser",
                     "group": "open-in-browser"
                 }
             ]
